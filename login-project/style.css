@@ -1,0 +1,254 @@
+.l_row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
+}
+
+.l_row_thin {
+  gap: 4px;
+}
+.l_row_wide {
+  gap: 20px;
+}
+
+.l_col_12_12 {
+  grid-column: auto / span 12;
+}
+.l_col_11_12 {
+  grid-column: auto / span 11;
+}
+.l_col_10_12 {
+  grid-column: auto / span 10;
+}
+.l_col_9_12 {
+  grid-column: auto / span 9;
+}
+.l_col_8_12 {
+  grid-column: auto / span 8;
+}
+.l_col_7_12 {
+  grid-column: auto / span 7;
+}
+.l_col_6_12 {
+  grid-column: auto / span 6;
+}
+.l_col_5_12 {
+  grid-column: auto / span 5;
+}
+.l_col_4_12 {
+  grid-column: auto / span 4;
+}
+.l_col_3_12 {
+  grid-column: auto / span 3;
+}
+.l_col_2_12 {
+  grid-column: auto / span 2;
+}
+.l_col_1_12 {
+  grid-column: auto / span 1;
+}
+
+/*! Resets */
+body {
+  margin: unset;
+}
+h1 {
+  margin: unset;
+}
+fieldset,
+legend {
+  all: unset;
+  display: block;
+  inline-size: 100%;
+}
+ul {
+  margin: unset;
+  padding: unset;
+  list-style: none;
+}
+button {
+  all: unset;
+}
+/* ! Typography */
+:root {
+  font-family: "Montserrat", sans-serif;
+}
+/* !  Commons (공통적인) */
+.ir {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+.label-sub {
+  color: var(--color-sub-color04);
+  font-size: 10px;
+}
+/* ! CSS Variables */
+:root {
+  --color-Primary-color01: #0468ff;
+  --color-sub-color01: #fff;
+  --color-sub-color02: #eee;
+  --color-sub-color03: #d9d9d9;
+  --color-sub-color04: #999;
+  --color-sub-color05: #666;
+  --color-sub-color06: #444;
+  --color-sub-color07: #333;
+  --color-sub-color08: #111;
+}
+/* ! Layouts */
+
+/* ! Components */
+.wrap {
+  height: 100vh;
+  background-color: var(--color-sub-color01);
+}
+.container {
+  display: flex;
+  height: 100%;
+  padding: 60px;
+  box-sizing: border-box;
+  overflow: auto;
+}
+.profile-box {
+  width: 100%;
+  max-width: 380px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+}
+.profile-header {
+  display: flex;
+  justify-content: flex-start;
+}
+.header-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+.profile-main {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.main-section {
+  background-color: var(--color-sub-color02);
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+.main-section:last-child {
+  margin-bottom: 18px;
+}
+.label {
+  color: var(--color-sub-color07);
+  font-size: 12px;
+  font-weight: 700;
+}
+.input-box {
+  position: relative;
+  z-index: 1;
+}
+.input-box.type_fixedEmail::after {
+  position: absolute;
+  content: "@veamcamp.com";
+  top: 8px;
+  right: 10px;
+  font-size: 10px;
+  font-family: 700;
+}
+/* !---------- */
+input[type="text"],
+input[type="password"],
+select {
+  all: unset;
+  display: block;
+  inline-size: 100%;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+/* !------------ */
+.input-box {
+  border: 2px solid var(--color-sub-color04);
+  background-color: var(--color-sub-color01);
+  border-radius: 6px;
+  margin: 8px 0;
+  font-size: 12px;
+}
+.input-box:focus-within {
+  border-color: var(--color-Primary-color01);
+}
+
+.input-box.type_selectArrow::after {
+  position: absolute;
+  content: " ";
+  background-image: url("./images/dropdown.svg");
+  width: 14px;
+  height: 14px;
+  top: 8px;
+  right: 10px;
+  z-index: -1;
+}
+.input-box.type_bold {
+  color: #111;
+  font-weight: 700;
+}
+.l_row {
+  align-items: center;
+}
+.citation-btn {
+  background-color: var(--color-sub-color08);
+  color: var(--color-sub-color01);
+  font-size: 10px;
+  font-weight: 700;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 4px;
+}
+.type_close {
+  background-color: var(--color-sub-color03);
+}
+.agree-btn {
+  margin-bottom: 18px;
+}
+.agree-btn-label {
+  display: flex;
+  gap: 6px;
+}
+.checkbox-title {
+  color: var(--color-sub-color07);
+  font-size: 10px;
+  font-weight: 700;
+}
+.checkbox-title-sub {
+  position: relative;
+  z-index: 1;
+}
+.checkbox-title-sub::before {
+  content: " ";
+  position: absolute;
+  top: 4px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-sub-color03);
+  z-index: -1;
+}
+.finish-section {
+  display: flex;
+  justify-content: center;
+  background-color: palevioletred;
+  border-radius: 4px;
+  padding: 12px;
+}
+.finish-btn {
+  color: var(--color-sub-color01);
+  font-size: 10px;
+  font-weight: 700;
+}

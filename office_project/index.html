@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>대시보드</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="menu-bar">
+          <button class="menu-list is_active" type="button" data-nav-button>
+            <i class="list-logo">
+              <svg
+                data-nav-button
+                width="64"
+                height="64"
+                viewBox="0 0 64 64"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g id="Frame">
+                  <path
+                    id="Vector"
+                    d="M53.3334 53.328H12.6667C11.5627 53.328 10.6667 54.224 10.6667 55.328C10.6667 56.432 11.5627 57.328 12.6667 57.328H54.6667C56.08 57.328 57.3334 56.0773 57.3334 54.6613V12.6613C57.3334 11.5573 56.4374 10.6613 55.3334 10.6613C54.2294 10.6613 53.3334 11.5573 53.3334 12.6613V53.328ZM50.6667 7.99467C50.6667 6.72 49.656 5.328 48 5.328H8.00004C6.34671 5.328 5.33337 6.712 5.33337 7.99467V47.9947C5.33337 49.6507 6.72004 50.6613 8.00004 50.6613H48C49.2747 50.6613 50.6667 49.6507 50.6667 47.9947V7.99467ZM46.6667 18.6613V46.6613H9.33337V18.6613H46.6667Z"
+                    fill="currentColor" />
+                </g></svg
+            ></i>
+            <p class="list-title">회의실 탐색</p>
+          </button>
+          <button class="menu-list" type="button" data-nav-button>
+            <i class="list-logo">
+              <svg
+                width="64"
+                height="64"
+                viewBox="0 0 64 64"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g id="Frame">
+                  <path
+                    id="Vector"
+                    d="M46.6693 34.6667C53.5493 34.6667 58.6667 40.2853 58.6667 46.664C58.6667 53.544 53.0533 58.6613 46.6693 58.6613C39.7733 58.6613 34.6693 53.0293 34.6693 46.664C34.6693 40.248 39.8267 34.6667 46.6693 34.6667ZM34 55.9973H10.6667C9.38667 55.9973 8 54.9867 8 53.3307V10.664C8 9.38133 9.01333 7.99733 10.6667 7.99733H53.3333C54.9893 7.99733 56 9.38933 56 10.664V34.0053C54.7867 33.1093 53.4427 32.384 52 31.864V21.3307H12V51.9973H31.8587C32.3787 53.44 33.104 54.784 34 55.9973ZM48.0027 45.3307V41.3307C48.0027 40.624 47.376 39.9973 46.6693 39.9973C45.96 39.9973 45.336 40.624 45.336 41.3307V45.3307H41.336C40.6267 45.3307 40.0027 45.9573 40.0027 46.664C40.0027 47.3707 40.6267 47.9973 41.336 47.9973H45.336V51.9973C45.336 52.704 45.96 53.3307 46.6693 53.3307C47.376 53.3307 48.0027 52.704 48.0027 51.9973V47.9973H52C52.7093 47.9973 53.3333 47.3707 53.3333 46.664C53.3333 45.9573 52.7093 45.3307 52 45.3307H48.0027Z"
+                    fill="currentColor" />
+                </g>
+              </svg>
+            </i>
+            <p class="list-title">예약하기</p>
+          </button>
+          <button class="menu-list" type="button" data-nav-button>
+            <i class="list-logo">
+              <svg
+                width="64"
+                height="64"
+                viewBox="0 0 64 64"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g id="Frame">
+                  <path
+                    id="Vector"
+                    d="M29.966 5.24674C30.344 4.48337 31.136 4 32 4C32.867 4 33.656 4.48337 34.034 5.24674C36.956 11.1356 41.984 21.2804 41.984 21.2804C41.984 21.2804 53.417 22.8248 60.05 23.7238C61.259 23.8859 62 24.8909 62 25.9255C62 26.4855 61.784 27.0543 61.307 27.5053C56.477 32.0383 48.161 39.8577 48.161 39.8577C48.161 39.8577 50.192 50.9604 51.368 57.4004C51.617 58.7621 50.543 60 49.142 60C48.776 60 48.41 59.9145 48.077 59.7377C42.173 56.6488 32 51.3347 32 51.3347C32 51.3347 21.827 56.6488 15.923 59.7377C15.59 59.9145 15.221 60 14.855 60C13.46 60 12.38 58.7592 12.632 57.4004C13.811 50.9604 15.842 39.8577 15.842 39.8577C15.842 39.8577 7.523 32.0383 2.696 27.5053C2.216 27.0543 2 26.4855 2 25.9284C2 24.8909 2.747 23.8829 3.953 23.7238C10.586 22.8248 22.016 21.2804 22.016 21.2804C22.016 21.2804 27.047 11.1356 29.966 5.24674ZM32 11.2387L24.917 25.3625L9.179 27.4817L20.723 38.2189L17.879 53.7074L32 46.3242L46.121 53.7074L43.268 38.2749L54.821 27.4817L38.879 25.2535L32 11.2387Z"
+                    fill="currentColor" />
+                </g></svg
+            ></i>
+            <p class="list-title">마이페이지</p>
+          </button>
+        </div>
+        <div class="contents">
+          <div class="content">
+            <div class="content-main">
+              <div class="content-section">
+                <header class="content-header">
+                  <div class="content-title">
+                    <h1 class="title">회의실 탐색</h1>
+                    <p class="title-sub">회의실을 탐색 할 수 있습니다</p>
+                  </div>
+                  <div class="content-header-item">
+                    <button class="header-item-icon" data-modal-trigger="modal">
+                      검색 필터
+                    </button>
+                  </div>
+                </header>
+                <section class="platform">
+                  <header class="platform-header">
+                    <h2 class="platform-title">5층</h2>
+                    <p class="platform-title-sub">3개의 회의실</p>
+                  </header>
+                  <ul class="l_row">
+                    <li class="card l_col l_col_4_12">
+                      <a class="card-link" href="">
+                        <img
+                          class="card-cover"
+                          src="./images/office01.png"
+                          alt="" />
+                        <div class="card-header">
+                          <h3 class="card-title">영감의 공간</h3>
+                        </div>
+                        <p class="card-description">
+                          14개의 좌석, 언제나 이용 할 수 있는 원두 커피. 공짜임
+                        </p></a
+                      >
+                    </li>
+                    <li class="card l_col l_col_4_12">
+                      <a class="card-link" href="">
+                        <img
+                          class="card-cover"
+                          src="./images/office02.png"
+                          alt="" />
+                        <div class="card-header">
+                          <h3 class="card-title">휴식의 공간</h3>
+                        </div>
+                        <p class="card-description">
+                          14개의 좌석, 언제나 이용 할 수 있는 원두 커피. 공짜임
+                        </p>
+                      </a>
+                    </li>
+                    <li class="card l_col l_col_4_12">
+                      <a class="card-link" href="">
+                        <img
+                          class="card-cover"
+                          src="./images/office03.png"
+                          alt="" />
+                        <div class="card-header">
+                          <h3 class="card-title">커피의 공간</h3>
+                        </div>
+                        <p class="card-description">
+                          14개의 좌석, 언제나 이용 할 수 있는 원두 커피. 공짜임
+                        </p>
+                      </a>
+                    </li>
+                  </ul>
+                </section>
+                <section class="platform">
+                  <header class="platform-header">
+                    <h2 class="platform-title">6층</h2>
+                    <p class="platform-title-sub">2개의 회의실</p>
+                  </header>
+                  <ul class="l_row">
+                    <li class="card l_col l_col_4_12">
+                      <a class="card-link" href="">
+                        <img
+                          class="card-cover"
+                          src="./images/office04.png"
+                          alt="" />
+                        <div class="card-header">
+                          <h3 class="card-title">정신과 시간의 방</h3>
+                        </div>
+                        <p class="card-description">
+                          14개의 좌석, 언제나 이용 할 수 있는 원두 커피. 공짜임
+                        </p>
+                      </a>
+                    </li>
+                    <li class="card l_col l_col_4_12">
+                      <a class="card-link" href="">
+                        <img
+                          class="card-cover"
+                          src="./images/office05.png"
+                          alt="" />
+                        <div class="card-header">
+                          <h3 class="card-title">하늘 전망대</h3>
+                        </div>
+                        <p class="card-description">
+                          14개의 좌석, 언제나 이용 할 수 있는 원두 커피. 공짜임
+                        </p>
+                      </a>
+                    </li>
+                  </ul>
+                </section>
+                <!-- <a class="platform-link" href="#">
+                  <span class="add-name">회의실 더 불러오기</span>
+                </a> -->
+              </div>
+            </div>
+            <hr class="side-handler" />
+            <div class="content-aside">
+              <div class="aside-panel">
+                <div class="slider">
+                  <div class="slider-main">
+                    <div class="slider-contents">
+                      <div class="slider-item">
+                        <img class="" src="./images/office-aside.png" alt="" />
+                      </div>
+                      <div class="slider-item">
+                        <img src="./images/office-aside.png" alt="" />
+                      </div>
+                      <div class="slider-item">
+                        <img src="./images/office-aside.png" alt="" />
+                      </div>
+                    </div>
+                    <button class="slider-button type-previous" type="button">
+                      <i class="ir">이전</i>
+                    </button>
+                    <button class="slider-button type-next" type="button">
+                      <i class="ir"> 다음 </i>
+                    </button>
+                  </div>
+                  <div class="slider-pager">
+                    <button class="slider-pager-item is_active" type="button">
+                      <i class="ir">1</i>
+                    </button>
+                    <button class="slider-pager-item" type="button">
+                      <i class="ir">2</i>
+                    </button>
+                    <button class="slider-pager-item" type="button">
+                      <i class="ir">3</i>
+                    </button>
+                  </div>
+                </div>
+                <form class="form" action="https://www.youtube.com/veamcamp">
+                  <fieldset>
+                    <legend><i class="ir">회의실 예약</i></legend>
+                    <div class="form-field">
+                      <label class="form-field-label" for="type"
+                        >어떤 용도로 이용할 예정이신가요?
+                      </label>
+                      <div class="input">
+                        <select id="type">
+                          <option value="">디자이너와의 티타임</option>
+                          <option value="">원명님과 던파 한판</option>
+                          <option value="">가희님과 신전 떡볶이 먹방</option>
+                          <option value="">민캠프 수강하기</option>
+                          <option value="">지성님과 헤드셋 테크 리뷰</option>
+                          <option value="">소정님과 주먹밥 만들기</option>
+                          <option value="">해리님과 고양이 빗질</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-field">
+                      <label class="form-field-label" for=""
+                        >회의의 규모는 어떠한가요?</label
+                      >
+                      <ul class="l_row">
+                        <li class="l_col l_col_4_12">
+                          <label class="radio">
+                            <input
+                              checked
+                              name="size"
+                              type="radio"
+                              value="2~8" />
+                            <span class="radio-card">2 ~ 8인</span>
+                          </label>
+                        </li>
+                        <li class="l_col l_col_4_12">
+                          <label class="radio">
+                            <input name="size" type="radio" value="9~20" />
+                            <span class="radio-card">9 ~ 20인</span>
+                          </label>
+                        </li>
+                        <li class="l_col l_col_4_12">
+                          <label class="radio">
+                            <input
+                              disabled
+                              name="size"
+                              type="radio"
+                              value="21~100" />
+                            <span class="radio-card">21 ~ 100인</span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="form-field">
+                      <label class="form-field-label" for="name"
+                        >예약자의 성함을 알려 주세요.</label
+                      >
+                      <div class="input">
+                        <input id="name" type="text" placeholder="성함 입력" />
+                      </div>
+                    </div>
+                    <div class="form-field">
+                      <label class="form-field-label" for="description" for=""
+                        >회의의 주제를 남겨 주세요.</label
+                      >
+                      <div class="input">
+                        <textarea
+                          id="description"
+                          rows="5"
+                          placeholder="주제에 대한 짧은 요약"></textarea>
+                      </div>
+                    </div>
+                    <div class="form-footer">
+                      <button class="button type_large" type="submit ">
+                        예약 완료하기
+                      </button>
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" data-modal-target="modal">
+        <div class="modal-inside">
+          <section class="modal-window">
+            <header class="modal-header">
+              <div class="modal-header-section">
+                <button class="modal-filter-button" type="button">
+                  <i class="ir">모달 윈도우 회의실 필터링 버튼</i>
+                </button>
+                <h1 class="modal-title">회의실 필터링</h1>
+              </div>
+              <button class="modal-cancel-button" data-modal-close>
+                <i class="ir">모달 윈도우 나가기</i>
+              </button>
+            </header>
+            <div class="modal-main">
+              <form class="form type_modal" action="">
+                <fieldset>
+                  <legend><i class="ir">모달 회의실 필터링</i></legend>
+                  <div class="modal-form-feild type_bottom">
+                    <label class="modal-feild-title" for="">
+                      층수를 선택 해주세요</label
+                    >
+                    <ul class="modal-checkeds">
+                      <li>
+                        <label class="modal-checked">
+                          <input checked type="checkbox" />
+                          <span class="modal-checked-card type_checked"
+                            >4층</span
+                          >
+                        </label>
+                      </li>
+                      <li class="modal-checked">
+                        <label class="modal-checked">
+                          <input type="checkbox" />
+                          <span class="modal-checked-card">5층</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="modal-checked">
+                          <input type="checkbox" />
+                          <span class="modal-checked-card">6층</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="modal-form-feild">
+                    <label class="modal-feild-title" for="selection"
+                      >회의실 타입을 선택 해주세요</label
+                    >
+                    <div class="modal-section input">
+                      <select id="selection">
+                        <option selected value="">집중 몰입형</option>
+                        <option value="">집중 몰입형 2</option>
+                        <option value="">집중 몰입형 3</option>
+                        <option value="">집중 몰입형 4</option>
+                        <option value="">집중 몰입형 5</option>
+                      </select>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+            <footer class="modal-footer">
+              <button
+                class="modal-footer-cancel"
+                type="button"
+                data-modal-close>
+                취소
+              </button>
+              <button class="modal-footer-check" type="button" data-modal-close>
+                확인
+              </button>
+            </footer>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

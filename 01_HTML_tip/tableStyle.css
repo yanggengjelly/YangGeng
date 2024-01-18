@@ -1,0 +1,54 @@
+/*! CSS Resets */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: unset;
+}
+
+caption {
+  text-align: unset;
+}
+
+table th {
+  font-weight: unset;
+  text-align: unset;
+}
+
+table th,
+table td {
+  padding: unset;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+/*! Components */
+body {
+  background-color: #ddd;
+}
+
+.table {
+  background-color: #efefef;
+  table-layout: fixed;
+}
+
+.table th,
+.table td {
+  vertical-align: middle;
+  padding: 0 20px;
+  height: 60px;
+  border-bottom: 1px solid #999;
+}
+
+table td:not(:first-child) {
+  border-left: 1px solid #999;
+}
+.table thead {
+  background-color: white;
+}
+
+.table-caption {
+  font-size: 24px;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PROFILE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="content">
+          <header class="header-contents">
+            <img class="header-cover" src="./images/cover03.png" alt="" />
+            <div class="profile-box">
+              <img class="profile-src" src="./images/profile03.png" alt="" />
+              <div class="profile-title">
+                <h1 class="title">JANE DOE</h1>
+                <p class="title-sub">FRONT-END DESIGNER</p>
+              </div>
+            </div>
+          </header>
+          <div class="main-contents">
+            <div class="l_row">
+              <button
+                class="contents-button point_none l_col_4_12 l_col_6_12"
+                type="button"
+                data-modal-trigger="modals">
+                <h2 class="button-title">Information</h2>
+                <ul>
+                  <li class="button-list">Yang Junho</li>
+                  <li class="button-list">yangjunho96@naver.com</li>
+                  <li class="button-list">Seoul, Korea</li>
+                </ul>
+              </button>
+              <button
+                class="contents-button type_skills l_col_4_12 l_col_6_12"
+                type="button">
+                <h2 class="button-title">Skills</h2>
+                <ul>
+                  <li class="button-list">Yang Junho</li>
+                  <li class="button-list">yangjunho96@naver.com</li>
+                  <li class="button-list">Seoul, Korea</li>
+                </ul>
+              </button>
+              <button
+                class="contents-button l_col_4_12 l_col_6_12"
+                type="button">
+                <h2 class="button-title">Profile</h2>
+                <ul>
+                  <li class="button-list">Yang Junho</li>
+                  <li class="button-list">yangjunho96@naver.com</li>
+                  <li class="button-list">Seoul, Korea</li>
+                </ul>
+              </button>
+            </div>
+          </div>
+          <footer class="footer-contents">
+            <div class="footer-link">
+              <a class="link" href="#"><i class="ir">트위터</i></a>
+              <a class="link type_facebook" href="#"
+                ><i class="ir">페이스북</i></a
+              >
+              <a class="link type_pinterest" href="#"
+                ><i class="ir">핀터레스트</i></a
+              >
+            </div>
+          </footer>
+        </div>
+
+        <div class="modal" data-modal-target="modals">
+          <div class="modal-inside">
+            <section class="modal-window">
+              <header class="window-header">
+                <h2 class="window-title">Information</h2>
+                <button class="window-cancel" data-modal-close>X</button>
+              </header>
+              <div class="window-main">
+                <ul>
+                  <li class="window-main-list">Yang Junho</li>
+                  <li class="window-main-list">yangjunho96@naver.com</li>
+                  <li class="window-main-list">Seoul, Korea</li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

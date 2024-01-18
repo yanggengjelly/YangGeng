@@ -1,0 +1,215 @@
+.l_row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -20px;
+  row-gap: 40px;
+}
+
+.l_col {
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+.l_col_12_12 {
+  width: 100%;
+}
+.l_col_11_12 {
+  width: 91.66666667%;
+}
+.l_col_10_12 {
+  width: 83.33333333%;
+}
+.l_col_9_12 {
+  width: 75%;
+}
+.l_col_8_12 {
+  width: 66.66666667%;
+}
+.l_col_7_12 {
+  width: 58.33333333%;
+}
+.l_col_6_12 {
+  width: 50%;
+}
+.l_col_5_12 {
+  width: 41.66666667%;
+}
+.l_col_4_12 {
+  width: 33.33333333%;
+}
+.l_col_3_12 {
+  width: 25%;
+}
+.l_col_2_12 {
+  width: 16.66666667%;
+}
+.l_col_1_12 {
+  width: 8.33333333%;
+}
+
+.l_row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
+}
+
+.l_row_thin {
+  gap: 4px;
+}
+.l_row_wide {
+  gap: 20px;
+}
+
+.l_col_12_12 {
+  grid-column: auto / span 12;
+}
+.l_col_11_12 {
+  grid-column: auto / span 11;
+}
+.l_col_10_12 {
+  grid-column: auto / span 10;
+}
+.l_col_9_12 {
+  grid-column: auto / span 9;
+}
+.l_col_8_12 {
+  grid-column: auto / span 8;
+}
+.l_col_7_12 {
+  grid-column: auto / span 7;
+}
+.l_col_6_12 {
+  grid-column: auto / span 6;
+}
+.l_col_5_12 {
+  grid-column: auto / span 5;
+}
+.l_col_4_12 {
+  grid-column: auto / span 4;
+}
+.l_col_3_12 {
+  grid-column: auto / span 3;
+}
+.l_col_2_12 {
+  grid-column: auto / span 2;
+}
+.l_col_1_12 {
+  grid-column: auto / span 1;
+}
+
+/*! Resets */
+
+/* ? form에 관련된 Reset */
+hr,
+button {
+  all: unset;
+}
+
+fieldset,
+legend {
+  all: unset;
+  display: block;
+  inline-size: 100%;
+}
+input[type="text"],
+input[type="password"],
+select {
+  all: unset;
+  display: block;
+  inline-size: 100%;
+  height: 48px;
+  line-height: 48px;
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+textarea {
+  all: unset;
+  inline-size: 100%;
+  line-height: 1.4;
+  padding: 12px;
+  box-sizing: border-box;
+}
+/* ?------------------ */
+/* ! Typography */
+:root {
+  font-family: "Montserrat", sans-serif;
+}
+/* ? font-size:; rem단위로 나가기 */
+
+/* !  Commons (공통적인) */
+.scrollbar {
+  overflow-y: scroll;
+}
+/* 스크롤바의 폭 너비 */
+.scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  /*height는 콘텐츠양이 많아지고 스크롤의  최소사이즈 */
+}
+.scrollbar::-webkit-scrollbar-thumb {
+  background: var(--color-Primary-color03); /* 스크롤바 색상 */
+  border-radius: 3px; /* 스크롤바 둥근 테두리 */
+  /* ? :enabled =가상클래스 스크롤이 필요없을때 없어지다가 필요할때 활성화 됨 */
+}
+.scrollbar::-webkit-scrollbar-track {
+  background: var(--color-Primary-color06); /*스크롤바 뒷 배경 색상*/
+  /* ? :enabled =가상클래스 스크롤이 필요없을때 없어지다가 필요할때 활성화 됨 */
+}
+body:has(.modal.is_active) {
+  overflow: hidden;
+}
+
+/* * 텍스트를 없앨때 index-9999px 과 같은 방법
+* <i class="ir">텍스트</i> 이렇게 공공제로 사용 가능하다  */
+.ir {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+/* ! CSS Variables */
+:root {
+  --color-Primary-color01: #0468ff;
+  --color-sub-color10: #fff;
+  --color-sub-color20: #eee;
+  --color-sub-color30: #d9d9d9;
+  --color-sub-color40: #999;
+  --color-sub-color50: #666;
+  --color-sub-color60: #444;
+  --color-sub-color70: #333;
+  --color-sub-color80: #111;
+}
+/* ! Layouts */
+
+/* ! Components */
+
+/* overflow: hidden; 
+* 콘텐츠 내부에 정해진 공간에서 넘어가면 안보이게 
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 2;
+* 콘텐츠 내부에 텍스트를 몇줄표시 할건지 넘어가면 ...표시 
+-webkit-box-orient: vertical; */
+
+button {
+  background: none;
+  color: #ffa260;
+  border: 2px solid;
+  padding: 1em 2em;
+  font-size: 1em;
+  transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+
+button:hover {
+  border-color: #f1ff5c;
+  color: white;
+  box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+  /* 숏엔드 순서대로  X오프셋, Y오프셋,
+	흐림범위, 번짐범위 ,컬러 */
+  transform: translateY(-0.25em);
+  cursor: pointer;
+}
+/* !Mediaqueries */
+/*? @media (max-width: 800px)  */

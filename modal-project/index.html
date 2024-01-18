@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MODAL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="common.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <button
+        class="is_active"
+        type="button"
+        data-modal-trigger="modal-typeFixed">
+        STEP1
+      </button>
+      <button
+        class="is_active"
+        type="button"
+        data-modal-trigger="modal-typeScroll">
+        STEP2
+      </button>
+    </div>
+    <div class="modal" data-modal-target="modal-typeFixed">
+      <div class="modal-inside">
+        <section class="modal-window">
+          <header class="window-header">
+            <h1 class="window-title">MODAL WINDOW</h1>
+            <button
+              class="window-button type-exit"
+              type="button"
+              data-modal-close>
+              <i class="ir">나가기</i>
+            </button>
+          </header>
+          <div class="window-main">
+            <p class="window-description">
+              What is Lorem Ipsum? <br />
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s
+            </p>
+          </div>
+          <footer class="window-footer">
+            <button
+              class="window-button type-check"
+              type="button"
+              data-modal-close>
+              OK
+            </button>
+          </footer>
+        </section>
+      </div>
+    </div>
+    <div class="modal type_scroll" data-modal-target="modal-typeScroll">
+      <div class="modal-inside type_scroll">
+        <section class="modal-window type_scroll">
+          <header class="window-header">
+            <h1 class="window-title">MODAL WINDOW</h1>
+            <button
+              class="window-button type-exit"
+              type="button"
+              data-modal-close>
+              <i class="ir">나가기</i>
+            </button>
+          </header>
+          <div class="window-main type_scroll">
+            <p class="window-description">
+              What is Lorem Ipsum? <br />
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s Lorem Ipsum is simply dummy text of the
+              printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an
+              unknown printer took a galley of type and scrambled it to make a
+              type specimen book. It has survived not only five centuries, but
+              also the leap into electronic typesetting, remaining essentially
+              unchanged. It was popularised in the 1960s Lorem Ipsum is simply
+              dummy text of the printing and typesetting industry. Lorem Ipsum
+              has been the industry's standard dummy text ever since the 1500s,
+              when an unknown printer took a galley of type and scrambled it to
+              make a type specimen book. It has survived not only five
+              centuries, but also the leap into electronic typesetting,
+              remaining essentially unchanged. It was popularised in the 1960s
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s Lorem Ipsum is simply dummy text of the
+              printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an
+              unknown printer took a galley of type and scrambled it to make a
+              type specimen book. It has survived not only five centuries, but
+              also the leap into electronic typesetting, remaining essentially
+              unchanged. It was popularised in the 1960s
+            </p>
+          </div>
+          <footer class="window-footer">
+            <button
+              class="window-button type-check"
+              type="button"
+              data-modal-close>
+              OK
+            </button>
+          </footer>
+        </section>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
